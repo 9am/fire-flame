@@ -1,0 +1,19 @@
+{
+  "name": "@demo/ff-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@9am/fire-flame-react": "0.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@vitejs/plugin-react": "2.0.0",
+    "typescript": "4.7.4"
+  }
+}

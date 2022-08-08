@@ -1,0 +1,8 @@
+**/node_modules
+**/dist
+**/.turbo
+**/vite.config.ts.*.mjs
+*.tgz
+*.log
+*.swp
+.DS_Store

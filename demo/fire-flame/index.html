@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>fire-flame</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        canvas {
+            border: 1px solid dimgrey;
+        }
+    </style>
+</head>
+<body>
+    <section id="ctrl">
+        <fieldset>
+            <legend>
+                Main
+            </legend>
+            <label for="w">
+                w
+            </label>
+            <input
+                id="w"
+                type="number"
+                min="300"
+                max="500"
+                step="20"
+                value="400"
+            />
+            <label for="h">
+                h
+            </label>
+            <input
+                id="h"
+                type="number"
+                min="300"
+                max="500"
+                step="20"
+                value="400"
+            />
+            <label for="fps">
+                fps
+            </label>
+            <input
+                id="fps"
+                type="number"
+                min="0"
+                max="60"
+                step="5"
+                value="60"
+            />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Force
+            </legend>
+            <label for="windX">
+                windX
+            </label>
+            <input
+                id="windX"
+                type="number"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="0"
+            />
+            <label for="windY">
+                windY
+            </label>
+            <input
+                id="windY"
+                type="number"
+                min="-2"
+                max="2"
+                step="0.1"
+                value="-0.8"
+            />
+            <label for="friction">
+                friction
+            </label>
+            <input
+                id="friction"
+                type="number"
+                min="0"
+                max="1"
+                step="0.05"
+                value="0.95"
+            />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Particle
+            </legend>
+            <label for="particleShow">
+                particleShow
+            </label>
+            <input
+                id="particleShow"
+                type="checkbox"
+            />
+            <label for="particleNum">
+                particleNum
+            </label>
+            <input
+                id="particleNum"
+                type="number"
+                min="10"
+                max="20"
+                step="1"
+                value="15"
+            />
+            <label for="particleDistance">
+                particleDistance
+            </label>
+            <input
+                id="particleDistance"
+                type="number"
+                min="4"
+                max="30"
+                step="2"
+                value="10"
+            />
+            <label for="particleFPS">
+                particleFPS
+            </label>
+            <input
+                id="particleFPS"
+                type="number"
+                min="6"
+                max="20"
+                step="2"
+                value="10"
+            />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Color
+            </legend>
+            <label for="innerColor">
+                innerColor
+            </label>
+            <input
+                id="innerColor"
+                type="color"
+                value="#0000ff"
+            />
+            <label for="outerColor">
+                outerColor
+            </label>
+            <input
+                id="outerColor"
+                type="color"
+                value="#8a2be2"
+            />
+        </fieldset>
+    </section>
+    <h2>Vanilla JS</h2>
+    <div id="app"></div>
+    <script type="module" src="/src/index.ts"></script>
+</body>
+</html>
