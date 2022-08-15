@@ -1,6 +1,6 @@
 {
   "name": "@9am/fire-flame-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "keywords": [
     "fire",
@@ -11,8 +11,8 @@
     "react"
   ],
   "files": [
-      "dist/*.js",
-      "dist/*.ts"
+    "dist/*.js",
+    "dist/*.ts"
   ],
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -43,7 +43,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@9am/fire-flame": "0.0.0"
+    "@9am/fire-flame": "0.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.16",
