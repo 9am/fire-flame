@@ -1,6 +1,6 @@
 {
   "name": "@9am/fire-flame-element",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "keywords": [
     "fire",
@@ -42,6 +42,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@9am/fire-flame": "0.0.0"
+    "@9am/fire-flame": "0.1.0"
   }
 }
