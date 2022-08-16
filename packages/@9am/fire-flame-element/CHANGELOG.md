@@ -1,5 +1,13 @@
 # @9am/fire-flame-element
 
+## 0.2.1
+
+### Patch Changes
+
+-   f6c0a3c: Update README
+-   Updated dependencies [f6c0a3c]
+    -   @9am/fire-flame@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes

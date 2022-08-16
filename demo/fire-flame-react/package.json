@@ -1,12 +1,12 @@
 {
   "name": "@demo/ff-react",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite"
   },
   "dependencies": {
-    "@9am/fire-flame-react": "0.2.0",
+    "@9am/fire-flame-react": "0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

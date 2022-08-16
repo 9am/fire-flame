@@ -1,5 +1,11 @@
 # @9am/fire-flame
 
+## 0.2.1
+
+### Patch Changes
+
+-   f6c0a3c: Update README
+
 ## 0.2.0
 
 ### Minor Changes
