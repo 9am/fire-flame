@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import { FireFlame, FireFlameOption, Vector } from '@9am/fire-flame-react';
+import React, { useState, useRef } from 'react';
+import { FireFlame } from '@9am/fire-flame-react';
 
 export default () => {
-    const [windX, setWindX] = useState(0);
+    const instance = useRef();
+    const [particleShow, toggle] = useState(false);
     const option = {
         x: 200,
         y: 200,
-        wind: new Vector({ x: windX, y: -0.6 }),
-    };
-    const onUpdate = () => {
-        setWindX((val) => val > 1 ? -1 : val + 0.1);
+        mousemove: false,
+        particleShow
     };
     return (
         <>
             <h2>React Component</h2>
-            <button onClick={onUpdate}>
-                update wind
-            </button>
-            <FireFlame option={option} />
+            <button onClick={() => toggle((val) => !val)}>toggle particle</button>
+            <button onClick={() => instance.current.start()}>start</button>
+            <button onClick={() => instance.current.stop()}>stop</button>
+            <button onClick={() => instance.current.set({ x: 300, y: 300 })}>set</button>
+            <FireFlame option={option} ref={instance} />
         </>
     );
-}
+};

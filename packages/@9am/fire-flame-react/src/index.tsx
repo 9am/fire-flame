@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useImperativeHandle } from 'react';
 import { FireFlame, Vector } from '@9am/fire-flame';
 import type { FireFlameOption } from '@9am/fire-flame';
 
@@ -7,9 +7,24 @@ type FireFlameProps = {
     option?: FireFlameOption;
 }
 
-const FireFlameComponent = ({ children, option = {} }: FireFlameProps) => {
+const FireFlameComponent = React.forwardRef(({ children, option = {} }: FireFlameProps, ref) => {
     const container = useRef<HTMLDivElement>(null);
     const instance = useRef<FireFlame | null>(null);
+
+    useImperativeHandle(ref, () => ({
+        setOption: (option: FireFlameOption) => {
+            instance.current?.setOption(option);
+        },
+        start: () => {
+            instance.current?.start();
+        },
+        stop: () => {
+            instance.current?.stop();
+        },
+        set: (val: any) => {
+            instance.current?.set(val);
+        }
+    }));
 
     useEffect(() => {
         if (!instance.current) {
@@ -23,6 +38,6 @@ const FireFlameComponent = ({ children, option = {} }: FireFlameProps) => {
     }, [option]);
 
     return <div ref={container}>{children}</div>;
-};
+});
 
 export { FireFlameComponent as FireFlame, FireFlameOption, Vector };
