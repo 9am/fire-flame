@@ -1,5 +1,16 @@
 # @9am/fire-flame-react
 
+## 0.2.0
+
+### Minor Changes
+
+-   6e8d8c2: Forward ref to instance
+
+### Patch Changes
+
+-   Updated dependencies [2ca210b]
+    -   @9am/fire-flame@0.2.0
+
 ## 0.1.0
 
 ### Minor Changes
