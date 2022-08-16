@@ -55,7 +55,7 @@ import { FireFlame } from '@9am/fire-flame-react';
 <FireFlame option={/* option */}></FireFlame>
 ```
 
-##Documentation
+## Documentation
 
 ### Option
 

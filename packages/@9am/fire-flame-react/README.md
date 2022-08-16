@@ -13,7 +13,7 @@
         </a>
         <a href="https://bundlephobia.com/package/@9am/fire-flame-react@latest">
             <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@9am/fire-flame-react">
-        </a>ag 
+        </a>
     </p>
 </div>
 
@@ -55,7 +55,7 @@ import { FireFlame } from '@9am/fire-flame-react';
 <FireFlame option={/* option */}></FireFlame>
 ```
 
-##Documentation
+## Documentation
 
 ### Option
 
