@@ -1,6 +1,6 @@
 {
   "name": "@9am/fire-flame-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A fire flame library.",
   "keywords": [
     "fire",
@@ -43,7 +43,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@9am/fire-flame": "0.2.0"
+    "@9am/fire-flame": "0.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.16",
