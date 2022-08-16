@@ -1,5 +1,16 @@
 # @9am/fire-flame-element
 
+## 0.2.0
+
+### Minor Changes
+
+-   6131821: Fix option parsing
+
+### Patch Changes
+
+-   Updated dependencies [2ca210b]
+    -   @9am/fire-flame@0.2.0
+
 ## 0.1.0
 
 ### Minor Changes
