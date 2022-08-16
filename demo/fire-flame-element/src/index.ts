@@ -27,5 +27,6 @@ ctrl!.addEventListener('change', () => {
         ...values,
         wind: new Vector({ x: values.windX, y: values.windY }),
     };
-    webcomponent.instance.setOption(option);
+    // webcomponent.instance.setOption(option);
+    webcomponent.option = option;
 });

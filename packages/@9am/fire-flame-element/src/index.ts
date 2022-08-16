@@ -2,13 +2,21 @@ import { FireFlame, Vector } from '@9am/fire-flame';
 import type { FireFlameOption } from '@9am/fire-flame';
 
 class FireFlameElement extends HTMLElement {
-    private container: HTMLElement;
+    private _container: HTMLElement;
     private _instance: FireFlame;
 
     protected static getTemplate(): HTMLTemplateElement {
         const template = document.createElement('template');
         template.innerHTML = `<div id="container"></div>`;
         return template;
+    }
+
+    static encode(val: FireFlameOption): string {
+        return JSON.stringify(val);
+    }
+
+    static decode(val: string): FireFlameOption {
+        return JSON.parse(val);
     }
 
     static get observedAttributes(): Array<string> {
@@ -29,7 +37,7 @@ class FireFlameElement extends HTMLElement {
         }
         switch (name) {
             case 'option':
-                this.option = JSON.parse(next);
+                this._instance?.setOption(FireFlameElement.decode(next));
                 break;
             default:
                 break;
@@ -40,8 +48,8 @@ class FireFlameElement extends HTMLElement {
         if (!this.hasAttribute('option')) {
             this.option = {};
         }
-        this.container = this.shadowRoot?.querySelector('#container')!;
-        this._instance = new FireFlame(this.container, this.option);
+        this._container = this.shadowRoot?.querySelector('#container')!;
+        this._instance = new FireFlame(this._container, this.option);
     }
 
     disconnectedCallback(): void {
@@ -49,12 +57,14 @@ class FireFlameElement extends HTMLElement {
     }
 
     get option(): FireFlameOption {
-        const optionAttr = this.getAttribute('option') || '{}';
-        return JSON.parse(optionAttr);
+        const attr = this.getAttribute('option') || FireFlameElement.encode({});
+        return FireFlameElement.decode(attr);
     }
 
     set option(val: FireFlameOption) {
-        this.setAttribute('option', JSON.stringify(val));
+        this._instance?.setOption(val);
+        const attr = FireFlameElement.encode(val);
+        this.setAttribute('option', attr);
     }
 
     get instance(): FireFlame {
