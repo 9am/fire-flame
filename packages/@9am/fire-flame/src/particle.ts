@@ -18,19 +18,6 @@ class Particle extends Vector {
     update(): void {
         this.add(this.v);
     }
-
-    render(ctx: CanvasRenderingContext2D) {
-        tv.set({ m: this.size, d: this.v.d + PI_H });
-        const a = Vector.add(this, tv);
-        const b = Vector.subtract(this, tv);
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, 4, 0, PI_2);
-        ctx.closePath();
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.stroke();
-        ctx.fill();
-    }
 }
 
 export default Particle;
