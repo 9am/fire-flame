@@ -1,5 +1,12 @@
 # @demo/ff
 
+## 0.0.5
+
+### Patch Changes
+
+-   Updated dependencies [b9f05a3]
+    -   @9am/fire-flame@0.3.1
+
 ## 0.0.4
 
 ### Patch Changes

@@ -1,12 +1,12 @@
 {
   "name": "@demo/ff",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "vite"
   },
   "dependencies": {
-    "@9am/fire-flame": "0.3.0"
+    "@9am/fire-flame": "0.3.1"
   },
   "devDependencies": {
     "typescript": "4.7.4"

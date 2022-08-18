@@ -1,5 +1,11 @@
 # @9am/fire-flame
 
+## 0.3.1
+
+### Patch Changes
+
+-   b9f05a3: Change default painter to 'canvas'.
+
 ## 0.3.0
 
 ### Minor Changes
