@@ -1,5 +1,12 @@
 # @demo/ff-react
 
+## 0.0.6
+
+### Patch Changes
+
+-   Updated dependencies [f1556f6]
+    -   @9am/fire-flame-react@0.3.2
+
 ## 0.0.5
 
 ### Patch Changes

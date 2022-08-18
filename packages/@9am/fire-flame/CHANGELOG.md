@@ -1,5 +1,11 @@
 # @9am/fire-flame
 
+## 0.3.2
+
+### Patch Changes
+
+-   f1556f6: Fix README format.
+
 ## 0.3.1
 
 ### Patch Changes

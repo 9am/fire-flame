@@ -1,5 +1,13 @@
 # @9am/fire-flame-element
 
+## 0.3.2
+
+### Patch Changes
+
+-   f1556f6: Fix README format.
+-   Updated dependencies [f1556f6]
+    -   @9am/fire-flame@0.3.2
+
 ## 0.3.1
 
 ### Patch Changes
