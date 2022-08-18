@@ -1,5 +1,12 @@
 # @demo/ff-element
 
+## 0.0.6
+
+### Patch Changes
+
+-   Updated dependencies [f1556f6]
+    -   @9am/fire-flame-element@0.3.2
+
 ## 0.0.5
 
 ### Patch Changes
