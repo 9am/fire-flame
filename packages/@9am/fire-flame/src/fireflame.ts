@@ -55,7 +55,7 @@ class FireFlame extends Vector {
                 x > 0.7 ? Math.sqrt(1 - x) * 50 : Math.pow(x - 1, 2) * -30 + 30,
             innerColor: 'blue',
             outerColor: 'blueviolet',
-            painterType: 'svg',
+            painterType: 'canvas',
         };
     }
 
