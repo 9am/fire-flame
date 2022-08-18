@@ -1,5 +1,16 @@
 # @9am/fire-flame-react
 
+## 0.3.0
+
+### Minor Changes
+
+-   ac4a93e: Support 2 types of painter: canvas and svg !
+
+### Patch Changes
+
+-   Updated dependencies [ac4a93e]
+    -   @9am/fire-flame@0.3.0
+
 ## 0.2.1
 
 ### Patch Changes

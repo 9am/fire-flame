@@ -1,12 +1,12 @@
 {
   "name": "@demo/ff-element",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite"
   },
   "dependencies": {
-    "@9am/fire-flame-element": "0.2.1"
+    "@9am/fire-flame-element": "0.3.0"
   },
   "devDependencies": {
     "typescript": "4.7.4"

@@ -1,5 +1,11 @@
 # @9am/fire-flame
 
+## 0.3.0
+
+### Minor Changes
+
+-   ac4a93e: Support 2 types of painter: canvas and svg !
+
 ## 0.2.1
 
 ### Patch Changes
