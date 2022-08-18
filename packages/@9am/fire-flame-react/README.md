@@ -61,14 +61,14 @@ import { FireFlame } from '@9am/fire-flame-react';
 
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
-|**`painter`**|`'canvas' | 'svg'`|`'canvas'`|the renderer for fire flame|
+|**`painter`**|'canvas' \| 'svg'|`'canvas'`|the renderer for fire flame|
 |**`w`**|number|`400`|width|
 |**`h`**|number|`400`|height|
 |**`x`**|number|`0`|position x|
 |**`y`**|number|`0`|position y|
 |**`mousemove`**|boolean|`true`|enable mousemove|
 |**`fps`**|number|`60`|render fps|
-|**`wind`**|`Vector`|`new Vector({ x: 0, y: -0.8 })`|the Vector force applied to particles|
+|**`wind`**|Vector|`new Vector({ x: 0, y: -0.8 })`|the Vector force applied to particles|
 |**`friction`**|number|`0.98`|the friction applied to particles|
 |**`particleNum`**|number|`15`|the number of particle to draw the flame|
 |**`particleDistance`**|number|`10`|the distance between particles|
