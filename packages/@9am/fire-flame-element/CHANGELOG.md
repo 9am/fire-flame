@@ -1,5 +1,12 @@
 # @9am/fire-flame-element
 
+## 0.3.1
+
+### Patch Changes
+
+-   Updated dependencies [b9f05a3]
+    -   @9am/fire-flame@0.3.1
+
 ## 0.3.0
 
 ### Minor Changes
